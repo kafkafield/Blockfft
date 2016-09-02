@@ -21,10 +21,10 @@ function [ O ] = conv2fftBlock( I, K )
             %tempo = imcrop(tempo, [kh kh kh-1 kh-1]);
             tempo = tempo(kh:2*kh-1, kh:2*kh-1);
             %col = cat(1, col, tempo);
-            col(1:kh, (j-1)*kh+1:j*kh)=tempo;
+            col(:, (j-1)*kh+1:j*kh)=tempo;
         end
         %O = cat(2, O, col);
-        O((i-1)*kh+1:i*kh, 1:kh*n) = col;
+        O((i-1)*kh+1:i*kh, :) = col;
     end
     
     %O = imcrop(o2, [3 3 sizeO2(1) sizeO(2)]);
