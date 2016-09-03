@@ -1,9 +1,9 @@
-t = ones(11);
-for i = 0:10
-    h = 2^i;
+t = zeros(256);
+for i = 1:256
+    h = i;
     temp = ones(h, h);
     tic;
-    for j = 1:1
+    for j = 1:1000
         fft2(temp);
     end
     toc;
