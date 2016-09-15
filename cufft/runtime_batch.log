@@ -1,0 +1,14 @@
+forwardsize13:batchsize8:2.805951
+backwardsize13:batchsize8:2.753044
+forwardsize13:batchsize16:1.378977
+backwardsize13:batchsize16:1.381972
+forwardsize13:batchsize32:0.698219
+backwardsize13:batchsize32:0.698316
+forwardsize13:batchsize64:0.364931
+backwardsize13:batchsize64:0.365063
+forwardsize13:batchsize128:0.198927
+backwardsize13:batchsize128:0.199199
+forwardsize13:batchsize192:0.145617
+backwardsize13:batchsize192:0.145366
+forwardsize13:batchsize256:0.016081
+backwardsize13:batchsize256:0.014458
